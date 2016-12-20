@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Geodan/ansible-pywinrm.svg?branch=master)](https://travis-ci.org/Geodan/ansible-pywinrm)
+
 PyWinRM Role
 =========
 
