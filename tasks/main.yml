@@ -2,10 +2,4 @@
 - name: Install latest PyWinRM
   pip:
     name: pywinrm
-  when: pywinrm_version == None or pywinrm_version == "LATEST"
-
-- name: Install required version of PyWinRM
-  pip:
-    name: pywinrm
-    version: "{{ pywinrm_version }}"
-  when: pywinrm_version != None or pywinrm_version != "LATEST"
+    version: "{{ pywinrm_version | default(omit) }}"
